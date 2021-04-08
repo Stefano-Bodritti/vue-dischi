@@ -17,14 +17,16 @@ var app = new Vue(
       axios.get("https://flynn.boolean.careers/exercises/api/array/music")
       .then( (risposta) => {
         this.albums = risposta.data.response;
+        //ciclo l'array di album e creo un nuovo array con i generi
         this.albums.forEach((item, i) => {
           if ( !this.genres.includes(item.genre) ) {
             this.genres.push(item.genre);
           }
         });
-
+        //ordino i dischi per anno d'uscita
+        // this.albums.sort(function (a, b) {return a.year - b.year});
+        this.albums.sort( (a, b) => a.year - b.year);
       });
-
     }
   }
 );

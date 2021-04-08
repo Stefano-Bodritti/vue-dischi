@@ -16,6 +16,7 @@
   </head>
   <body>
     <div id="app">
+      <!-- intestazione -->
       <header>
         <img src="img/download.png" alt="Spotify logo">
         <select name="genres" v-model="selected">
@@ -23,16 +24,21 @@
           <option v-for="genre in genres" :value="genre">{{ genre }}</option>
         </select>
       </header>
+      <!-- fine intestazione -->
+      <!-- corpo -->
       <main>
         <div class="container">
+          <!-- singolo box album -->
           <div class="box_disc" v-for="album in albums" v-show="selected == album.genre || selected == ''">
             <img :src="album.poster" :alt="album.title">
             <h3>{{ album.title }}</h3>
             <div class="author">{{ album.author }}</div>
             <div class="year">{{ album.year }}</div>
           </div>
+          <!-- fine singolo box album -->
         </div>
       </main>
+      <!-- fine corpo -->
     </div>
     <script src="js/scripts.js" charset="utf-8"></script>
   </body>
