@@ -19,12 +19,12 @@
       <img src="img/download.png" alt="Spotify logo">
     </header>
     <main>
-      <div class="container">
-        <div class="box_disc">
-          <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
-          <h3>New Jersey</h3>
-          <div class="author">Bon Jovi</div>
-          <div class="year">1988</div>
+      <div id="app" class="container">
+        <div class="box_disc" v-for="album in albums">
+          <img :src="album.poster" :alt="album.title">
+          <h3>{{ album.title }}</h3>
+          <div class="author">{{ album.author }}</div>
+          <div class="year">{{ album.year }}</div>
         </div>
 
       </div>

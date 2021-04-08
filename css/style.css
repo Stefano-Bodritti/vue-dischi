@@ -36,10 +36,12 @@ header img {
   align-items: center;
   flex-wrap: wrap;
   background-color: #2E3A46;
-  height: 300px;
+  height: 330px;
+  width: 170px;
   border-radius: 10px;
   padding: 15px;
   margin: 10px 15px;
+  text-align: center;
 }
 
 .box_disc img {
@@ -47,7 +49,8 @@ header img {
 }
 
 .box_disc h3 {
-  margin: 15px 0 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: white;
 }
