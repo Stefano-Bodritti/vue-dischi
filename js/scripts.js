@@ -10,7 +10,8 @@ var app = new Vue(
     el: "#app",
     data: {
       albums: [],
-      genres: []
+      genres: [],
+      selected: ""
     },
     mounted: function () {
       axios.get("https://flynn.boolean.careers/exercises/api/array/music")
