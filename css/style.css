@@ -12,14 +12,20 @@ body {
 
 header {
   height: 70px;
+  padding: 0 15px;
   background-color: #2E3A46;
   border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header img {
   height: 50px;
-  margin-top: 10px;
-  margin-left: 20px;
+}
+
+header select {
+  width: 80px;
 }
 
 .container {

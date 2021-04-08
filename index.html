@@ -17,6 +17,10 @@
   <body>
     <header>
       <img src="img/download.png" alt="Spotify logo">
+      <select name="genres">
+        <option value="">All</option>
+        <option v-for="genre in genres">{{ genre }}</option>
+      </select>
     </header>
     <main>
       <div id="app" class="container">
