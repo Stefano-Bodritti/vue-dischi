@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  background-color: #1E2D3B;
+}
+
+header {
+  height: 70px;
+  background-color: #2E3A46;
+  border-bottom: 2px solid black;
+}
+
+header img {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.box_disc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #2E3A46;
+  height: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 15px;
+}
+
+.box_disc img {
+  width: 140px;
+}
+
+.box_disc h3 {
+  margin: 15px 0 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.author, .year {
+  color: grey;
+}
